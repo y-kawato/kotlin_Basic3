@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/lvGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="143dp"
+            android:layout_y="63dp"
+            android:onClick="onBackButtonClick"
+            android:text="@string/tvGoBack" />
+
+        <Button
+            android:id="@+id/lvGoForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onForwardButtonClick"
+            android:text="@string/tvGoForward" />
+
+        <Button
+            android:id="@+id/lvReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="314dp"
+            android:layout_y="122dp"
+            android:onClick="onReloadButtonClick"
+            android:text="@string/tvReload" />
+
+    </WebView>
+
+</LinearLayout>
