@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">test2.1.3</string>
+    <string-array name="gazou">
+        <item>@drawable/map_2</item>
+        <item>@drawable/money_2</item>
+        <item>@drawable/noimage_2</item>
+        <item>@drawable/refresh_2</item>
+        <item>@drawable/time_2</item>
+    </string-array>
+</resources>
