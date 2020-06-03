@@ -1,9 +1,7 @@
 package jp.co.stv_tech.test114
 
-import android.accounts.Account
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,10 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val account1 = Account1()
-        val account2 = Account2()
+        val account1 = Account("山田花子", 23, "女性", "kotlin")
+        val account2 = Account("佐藤二朗", 50, "男性", "swift")
         account1.result()
         account2.result()
+
 
     }
 }
