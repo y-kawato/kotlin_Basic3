@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">天気予報</string>
+    <string name="toolbar_title">天気詳細</string>
+</resources>
