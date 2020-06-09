@@ -1,13 +1,11 @@
 package com.example.test222
 
-import android.graphics.Insets.add
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import io.realm.RealmResults
 import android.text.format.DateFormat
-import java.util.*
-import kotlin.concurrent.timer
+
 
 class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.Adapter<ViewHolder>() {
     private val rResults:RealmResults<Todo> = realmResults

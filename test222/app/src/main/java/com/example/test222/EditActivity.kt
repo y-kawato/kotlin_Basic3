@@ -2,7 +2,6 @@ package com.example.test222
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import io.realm.Realm
 import io.realm.kotlin.createObject
 import io.realm.kotlin.where
@@ -10,7 +9,6 @@ import kotlinx.android.synthetic.main.activity_edit.*
 import java.util.*
 
 class EditActivity : AppCompatActivity() {
-    private val tag = "TodoList"
     private lateinit var realm:Realm
 
     override fun onCreate(savedInstanceState: Bundle?) {
