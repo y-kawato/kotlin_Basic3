@@ -22,7 +22,7 @@ class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.A
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val todo = rResults[position]
         //holder.dateText?.text = DateFormat.format("yyyy/MM/dd kk:mm",todo?.created)
-        holder.limitdateText?.text = DateFormat.format("yyyy/MM/dd kk:mm",todo?.limitDate)
+        holder.limitdateText?.text = DateFormat.format("yyyy/MM/dd",todo?.limitDate)
         holder.titleText?.text = todo?.title.toString()
         holder.contentsText?.text = todo?.contents.toString()
 
