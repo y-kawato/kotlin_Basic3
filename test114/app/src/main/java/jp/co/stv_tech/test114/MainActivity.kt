@@ -14,7 +14,5 @@ class MainActivity : AppCompatActivity() {
         val account2 = Account("佐藤二朗", 50, "男性", "swift")
         account1.result()
         account2.result()
-
-
     }
 }

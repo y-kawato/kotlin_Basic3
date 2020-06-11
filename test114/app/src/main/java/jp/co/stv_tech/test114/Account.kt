@@ -10,6 +10,4 @@ class Account(private val name: String, private val age: Int, private val gender
     fun result() {
         println(introduce)
     }
-
-
 }
