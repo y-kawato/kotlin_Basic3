@@ -10,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val designner = Designner()
-        designner.computeYearlyPay()
+        designner.computeYearlyPay("佐藤二朗",50,"男性","東京",400000,10)
 
         val programmer = Programmer()
-        programmer.computeYearlyPay()
+        programmer.computeYearlyPay("山田花子",23,"女性","東京",200000,5)
     }
 }
