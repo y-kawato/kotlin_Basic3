@@ -9,14 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val teacher = Teacher("山田花子",23,"女性",200000.0)
-        teacher.result()
-
         val fiveYearsTeacher = FiveYearsTeacher()
-        fiveYearsTeacher.result()
+        fiveYearsTeacher.calculateSalary("山田花子",23,"女性",200000.0)
 
         val tenYearsTeacher = TenYearsTeacher()
-        tenYearsTeacher.result()
+        tenYearsTeacher.calculateSalary("佐藤二朗",50,"男性",400000.0)
     }
-
 }
