@@ -34,4 +34,9 @@
         android:text="@string/tvReload"
         tools:ignore="RtlHardcoded" />
 
+    <TextView
+        android:id="@+id/lvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </FrameLayout>

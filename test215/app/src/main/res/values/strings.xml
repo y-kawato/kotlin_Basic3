@@ -3,4 +3,5 @@
     <string name="tvGoBack">戻る</string>
     <string name="tvGoForward">次へ</string>
     <string name="tvReload">再接続</string>
+    <string name="tvText">ネットワークに接続されていません。</string>
 </resources>
