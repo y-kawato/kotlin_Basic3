@@ -8,8 +8,9 @@ class MainActivity : AppCompatActivity(),Result {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val math = Math(this)
-        math.calculate()
+        math.calculate(2,3)
     }
     override fun result(resultValue: Int) {
         println(resultValue)

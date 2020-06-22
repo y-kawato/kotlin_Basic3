@@ -1,13 +1,8 @@
 package jp.co.stv_tech.test117
 
+class Math(private var result:Result) {
 
-interface Result{
-    fun result(resultValue:Int)
-}
-class Math (private var result:Result) {
-    private val a:Int = 2
-    private val b:Int = 3
-    fun calculate(){
+    fun calculate(a: Int,b: Int){
         val math:Int = a + b
         result.result(math)
     }
