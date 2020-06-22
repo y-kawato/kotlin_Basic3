@@ -1,8 +1,10 @@
 package jp.co.stv_tech.test115
 
-class TenYearsTeacher() : Teacher(){
-    override fun calculateSalary(name:String,age:Int,gender:String,salary:Double) {
-        introduce = "「${name}さんは、${age}歳で給料は${salary*1.3}円です。」"
+class TenYearsTeacher(name:String,age:Int,gender:String,salary:Double) : Teacher(){
+    private val introduce = "「${name}さんは、${age}歳で給料は${salary*1.3}円です。」"
+
+    fun calculateSalary() {
+
         println(introduce)
     }
 }
