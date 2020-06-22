@@ -1,6 +1,6 @@
 package jp.co.stv_tech.test116
 
-open class Programmer() :Employee(){
+open class Programmer(name: String,age: Int,gender: String,address: String,salary: Int,numberOfProject: Int ) :Employee(){
     private val rank: Char = 'A'
 
     private fun getBonusByRank(): Int {
@@ -19,10 +19,11 @@ open class Programmer() :Employee(){
             else -> 0
         }
     }
-    override fun computeYearlyPay(name: String,age: Int,gender: String,address: String,salary: Int,numberOfProject: Int ) {
-        val money = salary + (10000*numberOfProject) + getBonusByRank()
+    private val money = salary + (10000*numberOfProject) + getBonusByRank()
 
-        val introduce = "「${name}さんは、${age}歳の${gender}で給料は${money}円${address}住みです。」"
+    private val introduce = "「${name}さんは、${age}歳の${gender}で給料は${money}円${address}住みです。」"
+    fun computeYearlyPay() {
+
         println(introduce)
     }
 }
