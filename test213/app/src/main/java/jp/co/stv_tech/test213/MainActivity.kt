@@ -28,17 +28,21 @@ class MainActivity : AppCompatActivity() {
 
     }
     private inner class HelloListener : View.OnClickListener {
-        @SuppressLint("Recycle")
+
+
         override fun onClick(v: View?) {
             val i = Log.i("MainActivity", "onClick")
 
             val gazouArray = resources.obtainTypedArray(R.array.gazou)
+
             val rand = floor(Math.random() * 5).toInt()
 
             val drawable: Drawable? = gazouArray.getDrawable(rand);
 
             iv1.setImageDrawable(drawable)
 
+            gazouArray.recycle()
         }
+
     }
 }
