@@ -1,6 +1,6 @@
 package jp.co.stv_tech.test116
 
-open class Programmer(name: String,age: Int,gender: String,address: String,salary: Int,numberOfProject: Int ) :Employee(){
+open class Programmer(name: String,age: Int,gender: String,address: String,salary: Int,numberOfProject: Int ) :Employee(name, age, gender, address, salary, numberOfProject){
     private val rank: Char = 'A'
 
     private fun getBonusByRank(): Int {
