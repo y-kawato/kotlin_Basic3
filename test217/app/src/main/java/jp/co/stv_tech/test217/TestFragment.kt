@@ -1,20 +1,14 @@
 package jp.co.stv_tech.test217
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import jp.co.stv_tech.test217.databinding.FragmentTestBinding
 import kotlinx.android.synthetic.main.fragment_test.*
-import kotlinx.android.synthetic.main.fragment_test2.*
 
 
 class TestFragment : Fragment() {
