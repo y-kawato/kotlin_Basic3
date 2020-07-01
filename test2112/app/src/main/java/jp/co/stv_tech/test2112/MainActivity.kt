@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private inner class GazouAdapter(private val gazouList: ArrayList<Gazou>): RecyclerView.Adapter<GazouAdapter.ViewHolder>() {
-        inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+            inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
             val lvGazouView: ImageView = view.findViewById(R.id.lvGazouView)
             val tvGazouName: TextView = view.findViewById(R.id.tvGazouName)
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
             val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.row, viewGroup, false)
             Log.i("GazouAdapter", "onCreateViewHolder")
-            
+
             view.setOnClickListener(ImageClickListener())
             return ViewHolder(view)
         }
@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity() {
         override fun onClick(view: View) {
             Log.i("GazouAdapter", "onClick")
             val tvGazouName = view.findViewById<TextView>(R.id.tvGazouName)
-
             val gazouName = tvGazouName.text.toString()
             Toast.makeText(applicationContext, gazouName, Toast.LENGTH_SHORT).show()
         }
