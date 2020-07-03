@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">test2.4.1</string>
+    <string name="address">y.kawato@stv-tech.co.jp</string>
+    <string name="title">Subject</string>
+    <string name="content">Enter message here…</string>
+    <string name="send">send</string>
+</resources>
