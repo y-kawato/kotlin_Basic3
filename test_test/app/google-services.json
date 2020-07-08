@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "508174241189",
+    "firebase_url": "https://testtest-c0d73.firebaseio.com",
+    "project_id": "testtest-c0d73",
+    "storage_bucket": "testtest-c0d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508174241189:android:6c9b2c2810778ebe8dec4c",
+        "android_client_info": {
+          "package_name": "jp.co.stv_tech.test_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508174241189-4tbtvm9uolrnv06h46nppshb323cdjvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5KwaZdg_9BK0loOCm6q8h96eqVYX45U4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508174241189-4tbtvm9uolrnv06h46nppshb323cdjvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
