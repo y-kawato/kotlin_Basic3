@@ -1,9 +1,9 @@
 package com.example.test222
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import io.realm.Realm
 import io.realm.kotlin.createObject
+import androidx.appcompat.app.AppCompatActivity
 import io.realm.kotlin.where
 import kotlinx.android.synthetic.main.activity_edit.*
 import java.util.*

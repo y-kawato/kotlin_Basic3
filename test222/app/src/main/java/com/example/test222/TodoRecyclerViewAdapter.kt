@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import io.realm.RealmResults
 import android.text.format.DateFormat
 
-
 class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.Adapter<ViewHolder>() {
     private val rResults:RealmResults<Todo> = realmResults
 
