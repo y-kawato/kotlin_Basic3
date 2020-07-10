@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import io.realm.RealmResults
 import android.text.format.DateFormat
 
-
 class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.Adapter<ViewHolder>() {
     private val rResults:RealmResults<Todo> = realmResults
 
@@ -21,7 +20,6 @@ class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.A
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val todo = rResults[position]
-        //holder.dateText?.text = DateFormat.format("yyyy/MM/dd kk:mm",todo?.created)
         holder.limitdateText?.text = DateFormat.format("yyyy/MM/dd",todo?.limitDate)
         holder.titleText?.text = todo?.title.toString()
         holder.contentsText?.text = todo?.contents.toString()

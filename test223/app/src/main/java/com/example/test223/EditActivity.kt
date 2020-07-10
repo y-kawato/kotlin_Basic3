@@ -33,8 +33,6 @@ class EditActivity : AppCompatActivity() {
                     val titleId = realm.where<Todo>().max("todoId")
                     val nextId = (titleId?.toLong() ?: 0L) + 1L
                     val todo = realm.createObject<Todo>(nextId)
-                    //todo.created = Date()
-                    //todo.modified = Date()
                     val cal = Calendar.getInstance()
                     cal.time = Date()
                     cal.add(Calendar.DATE, 7)
