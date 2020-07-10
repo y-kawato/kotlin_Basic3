@@ -32,6 +32,5 @@ class TodoRecyclerViewAdapter(realmResults: RealmResults<Todo>) : RecyclerView.A
             intent.putExtra("todoId",todo?.todoId)
             it.context.startActivity(intent)
         }
-
     }
 }

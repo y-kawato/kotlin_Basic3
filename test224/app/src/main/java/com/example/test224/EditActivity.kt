@@ -37,7 +37,6 @@ class EditActivity : AppCompatActivity() {
                 when (tdId) {
                     0L -> {
 
-
                         realm.executeTransaction {
                             val titleId = realm.where<Todo>().max("todoId")
                             val nextId = (titleId?.toLong() ?: 0L) + 1L
